@@ -1,0 +1,13 @@
+{
+  "name": "fromRepository",
+  "defaultLayout": "PhonePortrait",
+  "previewToken": "11dd9eee",
+  "theme": "Anchor",
+  "clientVersion": "6.1.0-dev",
+  "hidden": false,
+  "isBuiltInTemplate": false,
+  "disableSideMenu": false,
+  "offlineSupport": false,
+  "description": "",
+  "creatorId": "admin"
+}
