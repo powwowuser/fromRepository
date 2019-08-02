@@ -1,5 +1,13 @@
 {
   "id": "__BASE__",
   "name": "fromRepository",
-  "screens": []
+  "screens": [
+    {
+      "id": "mainscreen",
+      "name": "MainScreen",
+      "sourceScreenId": "blank",
+      "sourceAppId": "default"
+    }
+  ],
+  "startScreen": "mainscreen"
 }
