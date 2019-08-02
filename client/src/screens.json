@@ -9,5 +9,8 @@
       "sourceAppId": "default"
     }
   ],
-  "startScreen": "mainscreen"
+  "startScreen": "mainscreen",
+  "statusbarContent": "dark",
+  "statusbarHidden": false,
+  "statusbarBackground": null
 }
