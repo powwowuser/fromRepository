@@ -5,7 +5,7 @@ declare module 'app/globaldata.service' {
 }
 declare module 'app/screen' {
 	import { GlobalData } from 'app/globaldata.service';
-	import { BaseScreen } from "smartux-client";
+	import { BaseScreen } from 'smartux-client';
 	export class Screen extends BaseScreen {
 	    protected global: GlobalData;
 	}
@@ -20,9 +20,14 @@ declare module 'app/menu/menu' {
 declare module 'app/app.screens' {
 	/***  Generated file, do not change.  */
 	import { MenuComponent } from 'app/menu/menu';
+	import { mainscreen_PhonePortrait } from 'app/../pages/mainscreen/PhonePortrait/mainscreen';
 	export class Screens {
-	    static declarations: (typeof MenuComponent)[];
-	    static mapping: {};
+	    static declarations: typeof MenuComponent[];
+	    static mapping: {
+	        'mainscreen': {
+	            PhonePortrait: typeof mainscreen_PhonePortrait;
+	        };
+	    };
 	}
 
 }
@@ -99,6 +104,21 @@ declare module 'app/app.hooks' {
 	     *          false - don't prompt the user, ignore the request
 	     */
 	    onSwitchSessionRequest(): boolean;
+	    /**
+	     * Intercept a request to the server.  Return the boolean true to
+	     * continue as normal, or false to indicate not to proceed with the normal flow.
+	     */
+	    interceptServerRequest(method: any, params: any, filesToUpload: any, context: any): Promise<boolean>;
+	    /**
+	    * Intercept a response from the server.  Return the boolean true to
+	    * continue as normal, or false to indicate not to proceed with the normal flow.
+	    */
+	    interceptServerResponse(method: any, params: any): Promise<boolean>;
+	    onOffline(isOffline: any): Promise<void>;
+	    /**
+	    * Determines if the app has the logic in order to be working offline
+	    */
+	    hasOfflineSupport(): boolean;
 	}
 
 }

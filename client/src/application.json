@@ -3,11 +3,18 @@
   "defaultLayout": "PhonePortrait",
   "previewToken": "11dd9eee",
   "theme": "Anchor",
-  "clientVersion": "6.1.0-dev",
+  "clientVersion": "6.1.1",
   "hidden": false,
   "isBuiltInTemplate": false,
   "disableSideMenu": false,
-  "offlineSupport": false,
   "description": "",
-  "creatorId": "admin"
+  "creatorId": "admin",
+  "screensCount": 1,
+  "viewOnly": false,
+  "branch": "master",
+  "isRemote": true,
+  "creatorName": "PowWow Admin",
+  "explorations": [],
+  "useMockData": false,
+  "created": 1605120975653
 }
