@@ -1,6 +1,6 @@
 {
   "name": "fromRepository (Master)",
-  "defaultLayout": "PhonePortrait",
+  "defaultLayout": "Desktop",
   "previewToken": "11dd9eee",
   "theme": "Anchor",
   "clientVersion": "6.1.2",

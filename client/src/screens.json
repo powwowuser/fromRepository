@@ -6,7 +6,10 @@
       "id": "mainscreen",
       "name": "MainScreen",
       "sourceScreenId": "blank",
-      "sourceAppId": "default"
+      "sourceAppId": "default",
+      "extraViews": [
+        "PhonePortrait"
+      ]
     }
   ],
   "startScreen": "mainscreen",
